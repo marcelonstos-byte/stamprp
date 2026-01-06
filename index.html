@@ -213,6 +213,43 @@
             display: flex;
             gap: 10px;
         }
+        /* --- AJUSTES PARA DISPOSITIVOS MÓVEIS --- */
+@media (max-width: 800px) {
+    /* Aumenta os títulos do cabeçalho */
+    .header-center .title {
+        font-size: 32px !important;
+    }
+    
+    .header-center .sub {
+        font-size: 22px !important;
+    }
+
+    /* Aumenta os rótulos pequenos (Ex: NOME, RG) */
+    .label-small {
+        font-size: 18px !important;
+    }
+
+    /* Aumenta os valores preenchidos */
+    .value {
+        font-size: 24px !important;
+        min-height: 32px;
+    }
+
+    /* Aumenta o histórico especificamente */
+    .value.historico {
+        font-size: 20px !important;
+        line-height: 1.5;
+    }
+
+    /* Ajusta o formulário para facilitar o toque no celular */
+    .form-row {
+        flex-wrap: wrap;
+    }
+    
+    .col {
+        min-width: 100%;
+    }
+}
     </style>
 </head>
 
@@ -426,3 +463,4 @@
 
 </body>
 </html>
+
